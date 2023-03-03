@@ -1,5 +1,8 @@
 
+import java.util.HashSet;
 import java.util.Set;
+
+
 
 /**
  * Sets are unordered collections of elements. Sets do not allow duplicates.
@@ -10,6 +13,8 @@ import java.util.Set;
  * https://www.w3schools.com/java/java_hashset.asp
  */
 public class Lab {
+  
+
     /**
      * Instantiate and return a Set of Integers.
      *
@@ -19,8 +24,9 @@ public class Lab {
      * Some common implementations of Set are HashSet and TreeSet. Look into how to instantiate them.
      * @return a new Set<Integer> object.
      */
-    public Set<Integer> createSet(){
-        return null;
+    public Set<Integer> createSet() {
+          Set<Integer> list = new HashSet<Integer>();
+      return list;
     }
 
     /**
@@ -28,8 +34,8 @@ public class Lab {
      * @param set The set that we will be manipulating.
      * @return the size of set. (number of values)
      */
-    public int getSize(Set<Integer> set){
-        return 0;
+    public int getSize(Set<Integer> list){
+        return list.size();
     }
 
     /**
@@ -38,7 +44,9 @@ public class Lab {
      * @param item The item which we will be adding to set.
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
-    public void addUniqueItem(Set<Integer> set, int item){
+    public void addUniqueItem(Set<Integer> list, int value){
+       
+        list.add(value);
 
     }
 
@@ -48,7 +56,9 @@ public class Lab {
      * @param item The item which we will be removing from set.
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
-    public void removeItem(Set<Integer> set, int item){
+    public void removeItem(Set<Integer> list, int item){
+       list.remove(item);
+       
 
     }
 }
